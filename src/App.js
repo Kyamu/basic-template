@@ -4,6 +4,10 @@ import About from "./Components/About";
 import Section from "./Components/Section";
 import Footer from "./Components/Footer";
 
+import Form from "./Components/Form";
+
+
+
 
 let section_data = [
     {
@@ -22,6 +26,9 @@ let section_data = [
 ]
 
 const App = () => {
+
+
+
     return (
         <div>
             <Navbar />
@@ -35,13 +42,18 @@ const App = () => {
                         title={data.title}
                         content={data.content}
                     >
-                        {index != section_data.length - 1 ? <hr /> : " "}
+                        {index !== section_data.length - 1 ? <hr /> : " "}
                     </Section>
 
                 )
                 )
             }
             <Footer />
+
+            <Form />
+
+
+
 
         </div>
     )
