@@ -50,7 +50,7 @@ const App = () => {
             }
             <Footer />
 
-            <Form />
+            {/*<Form />*/}
 
 
 
